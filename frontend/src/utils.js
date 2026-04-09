@@ -1,0 +1,1 @@
+export const BACKEND_URL = "https://blogging-platform-backend-68er.onrender.com"
