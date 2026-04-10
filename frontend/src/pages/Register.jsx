@@ -41,7 +41,7 @@ function Register () {
     formData.append("photo", photo);
     try {
       const { data } = await axios.post(
-        "http://localhost:5000/api/users/register",
+        "https://blogging-platform-backend-68er.onrender.com/api/users/register",
         formData,{
           headers:{
             "Content-Type":"multipart/form-data",

@@ -11,7 +11,7 @@ function Detail() {
     const fetchblogs = async () => {
       try {
         const { data } = await axios.get(
-          `http://localhost:5000/api/blogs/single-blog/${id}`,
+          `https://blogging-platform-backend-68er.onrender.com/api/blogs/single-blog/${id}`,
 
           {
             withCredentials: true,

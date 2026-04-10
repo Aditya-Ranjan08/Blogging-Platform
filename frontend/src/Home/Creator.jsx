@@ -7,7 +7,7 @@ function Creator() {
   useEffect(() => {
     const fetchAdmins = async () => {
       const { data } = await axios.get(
-        "http://localhost:5000/api/users/admins",
+        "https://blogging-platform-backend-68er.onrender.com/api/users/admins",
         {
           withCredentials: true,
         }

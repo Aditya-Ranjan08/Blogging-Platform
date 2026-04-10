@@ -29,7 +29,7 @@ function UpdateBlog() {
     const fetchBlog = async () => {
       try {
         const { data } = await axios.get(
-          `http://localhost:5000/api/blogs/single-blog/${id}`,
+          `https://blogging-platform-backend-68er.onrender.com/api/blogs/single-blog/${id}`,
 
           {
             withCredentials: true,
@@ -61,7 +61,7 @@ function UpdateBlog() {
     formData.append("blogImage", blogImage);
     try {
       const { data } = await axios.put(
-        `http://localhost:5000/api/blogs/update/${id}`,
+        `https://blogging-platform-backend-68er.onrender.com/api/blogs/update/${id}`,
         formData,
         {
           withCredentials: true,

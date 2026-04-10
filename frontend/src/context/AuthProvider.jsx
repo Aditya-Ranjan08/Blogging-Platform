@@ -22,7 +22,7 @@ const [isAuthenticated,setIsAuthenticated] = useState(false);
         const parsedToken=token?JSON.parse(token):undefined
         if (parsedToken) {
           const { data } = await axios.get(
-            "http://localhost:5000/api/users/my-profile",
+            "https://blogging-platform-backend-68er.onrender.com/api/users/my-profile",
             {
               withCredentials: true,
               headers: {
@@ -41,7 +41,7 @@ const [isAuthenticated,setIsAuthenticated] = useState(false);
 
   const fetchBlogs =async()=>{
     try {
-      const {data} =await axios.get("http://localhost:5000/api/blogs/all-blogs");
+      const {data} =await axios.get("https://blogging-platform-backend-68er.onrender.com/api/blogs/all-blogs");
       console.log(data);
       setBlogs(data);
     } catch (error) {
