@@ -47,19 +47,33 @@ function Register () {
             "Content-Type":"multipart/form-data",
           },
         })
-        console.log(data)
-        toast.success( data.message || 'User registered successfully')
-        setIsAuthenticated(true);
-        setProfile(data);
-        setName("")
-        setEmail("")
-        setPhone("")
-        setPassword("")
-        setRole("");
-        setEducation("")
-        setPhoto("")
-        setPhotoPreview("");
-        navigateTo("/")
+        // console.log(data)
+        // toast.success( data.message || 'User registered successfully')
+        // setIsAuthenticated(true);
+        // setProfile(data);
+        // setName("")
+        // setEmail("")
+        // setPhone("")
+        // setPassword("")
+        // setRole("");
+        // setEducation("")
+        // setPhoto("")
+        // setPhotoPreview("");
+        // navigateTo("/")
+        console.log(data);
+
+toast.success(data.message || "User registered successfully");
+
+setName("");
+setEmail("");
+setPhone("");
+setPassword("");
+setRole("");
+setEducation("");
+setPhoto("");
+setPhotoPreview("");
+
+navigateTo("/login");
 
       }catch(error){
         console.log(error)
